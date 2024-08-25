@@ -103,18 +103,13 @@ body {
 ul,
 ol {
   list-style-type: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 a {
   color: #e2e3ed;
   text-decoration: none;
-}
-
-h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 2.25rem;
-  line-height: 43px;
-  font-weight: 500;
 }
 
 h2 {
@@ -135,61 +130,14 @@ p {
   line-height: 18px;
 }
 
-nav {
-  font-size: 1.125rem;
-  font-weight: bold;
-}
-
-img {
-}
-
-input {
-
-}
-
-input[type=text] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-}
- 
-input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.reviews .faq h2 {
-  line-height: 30px;
-}
-
 address {
   font-style: normal;
-}
-
-.social-icons {
-  font-size: 1.313rem;
 }
 
 figure {
 }
 
-.faq-content h4 {
-  line-height: 24px;
-}
+
 .content-wrapper {
   /*outline: 3px dotted red;*/
   width: 90%;
@@ -222,6 +170,9 @@ header .content-wrapper {
 
 header nav {
   width: 60%;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 header nav ul {
@@ -230,13 +181,6 @@ header nav ul {
   width: 100%;
 }
 
-aside {
-  background-color: #527158;
-}
-
-.reviews {
-  background-color: #2a423a;
-}
 
 footer {
   display: flex;
@@ -262,6 +206,7 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 1.313rem;
 }
 
 footer .social-icons p {
@@ -283,15 +228,45 @@ footer .copyright {
   justify-content: center;
 }
 
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 /* Aside */
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
 }
 
 aside .form {
   margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Features */
@@ -321,15 +296,21 @@ aside .form {
   margin: 0px;
 }
 
+.features-item-description {
+  text-align: center;
+}
+
 /* Reviews */
 
 .reviews {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 30px;
 }
 
 .reviews h3 {
@@ -344,11 +325,13 @@ aside .form {
 .mission {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 .contact-section {
   display: flex;
   justify-content: center;
+  background-color: #2a423a;
 }
 
 .contact-content p {
@@ -362,6 +345,7 @@ aside .form {
 .faq {
   display: flex;
   justify-content: center;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -378,6 +362,10 @@ aside .form {
 
 .faq-content {
   margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.333;
 }
 /* ==========================================================================
    Helper classes
@@ -476,11 +464,6 @@ aside .form {
     margin: 100px 0px;
   }
 
-  h1 {
-    font-size: 3rem;
-    line-height: 48px;
-  }
-
   h2 {
     font-size: 2.25rem;
     line-height: 48px;
@@ -491,18 +474,6 @@ aside .form {
     line-height: 30px;
   }
 
-  .contact h4, footer h4 {
-    font-size: 1.5rem;
-  }
-
-  footer p {
-    line-height: 18px;
-  }
-
-  .faq h4 p {
-    font-size: .875rem;
-    line-height: 15.75px; 
-  }
 
   /*Header*/
 
@@ -521,13 +492,22 @@ aside .form {
 
   header nav ul {
     justify-content: space-between;
+    padding: 0px;
   }
 
   .header-divider {
     display: none;
   }
 
+  
+
   /*Hero Area*/
+
+  .hero-area h1 {
+    font-size: 3rem;
+    line-height: 48px;
+    margin: 0px
+  }
 
 
   /*Aside*/
@@ -545,6 +525,10 @@ aside .form {
   }
 
   /*Features*/
+
+  .features h2 {
+    margin-bottom: 20px;
+  }
 
   .features article {
     display: flex;
@@ -568,6 +552,15 @@ aside .form {
     width: 49%;
   }
 
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
+
   /*Footer*/
 
   footer .content-wrapper {
@@ -578,6 +571,7 @@ aside .form {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   footer .contact {
@@ -586,6 +580,15 @@ aside .form {
 
   footer .copyright {
     width: 100%;
+  }
+
+  footer p {
+    line-height: 1.285;
+  }
+
+  footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
   }
 
   /* ==========================================================================
