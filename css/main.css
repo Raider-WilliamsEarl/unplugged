@@ -149,6 +149,11 @@ figure {
   margin: 50px 0px;
 }
 
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 /* -------------------- Base Header - Footer Styles -------------------- */
 
 header {
@@ -191,9 +196,9 @@ header nav ul li {
 }
 
 header figure {
-    background: url('../img/unpluggedlogo.png') center no-repeat #333;
-    background-size: cover;
-    width: 60%
+  background: url("../img/unpluggedlogo.png") center no-repeat #333;
+  background-size: cover;
+  width: 60%;
 }
 
 footer {
@@ -226,6 +231,11 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.285rem;
 }
 
 footer .copyright {
@@ -239,7 +249,7 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
-  background: url('../img/unplugged-retreat.jpg') center no-repeat #333;
+  background: url("../img/unplugged-retreat.jpg") center no-repeat #333;
   background-size: cover;
 }
 
@@ -289,7 +299,7 @@ input[type="button"] {
 .features {
   display: flex;
   justify-content: center;
-  background: url('../img/unplugged-retreat-features.jpg') center no-repeat #333;
+  background: url("../img/unplugged-retreat-features.jpg") center no-repeat #333;
   background-size: cover;
 }
 
@@ -311,6 +321,7 @@ input[type="button"] {
 
 .features p {
   margin: 0px;
+  text-align: center;
 }
 
 .features-item-description {
@@ -507,6 +518,11 @@ input[type="button"] {
     line-height: 1.875rem;
   }
 
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
+  }
+
   /*Header*/
 
   header {
@@ -632,8 +648,9 @@ input[type="button"] {
     margin-bottom: 40px;
   }
 
-  .contact h4 {
-    font-size: 1.5rem;
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   /* ==========================================================================
@@ -668,8 +685,6 @@ input[type="button"] {
   .map {
     padding-bottom: 45%;
   }
-
-  
 
   /* ==========================================================================
    FAQ Page
@@ -711,7 +726,8 @@ input[type="button"] {
     font-size: 2.25rem;
   }
 
-  h3, h4 {
+  h3,
+  h4 {
     font-size: 1.875rem;
   }
 
